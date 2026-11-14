@@ -17,7 +17,7 @@ disciplined workflows, safety, token efficiency, and reproducible model research
 
 | | Project | What it gives you | |
 |:-:|:--|:--|:--|
-| 🔀 | **[PrattleNot](https://github.com/agentic-underground/PrattleNot)** | An independent reproduction of [**LatentPort**](https://latentport.com/), Simon Villani's method, in Rust and WebAssembly: a small model reads the prompt, a fitted bridge translates its memory, and a larger model answers from it — sooner: up to **3.39×** faster to first token on LatentPort's own 4B → 27B pair, and **1.87×** on a new pair, running [in your browser](https://agentic-underground.github.io/PrattleNot/), carried to a five-times size gap (SmolLM2-360M → 1.7B), and to three more model families (Qwen3, Gemma 3, Llama 3.2 — Built with Llama) and a hybrid attention–recurrent model (Qwen3.5). | Rust · Apache-2.0 |
+| 🔀 | **[PrattleNot](https://github.com/agentic-underground/PrattleNot)** | An independent reproduction of [**LatentPort**](https://latentport.com/), Simon Villani's method, in Rust and WebAssembly: a small model reads the prompt, a fitted bridge translates its memory, and a larger model answers from it — sooner: up to **3.39×** faster to first token on LatentPort's own 4B → 27B pair, and **1.87×** on a new pair, running [in your browser](https://agentic-underground.github.io/PrattleNot/), carried to a five-times size gap (SmolLM2-360M → 1.7B), and to three more model families (Qwen3, Gemma 3, Llama 3.2 — Built with Llama) and a hybrid attention–recurrent model (Qwen3.5), including LatentPort's own Qwen3.5-4B → 9B pair at held-out NCR 0.989. | Rust · Apache-2.0 |
 | 🏭 | **[idea-to-production](https://github.com/agentic-underground/idea-to-production)** | Eight composable Claude Code plugins that carry software from the spark of an idea to production in one test-first value flow: discover ▸ refine ▸ design ▸ build ▸ assure ▸ secure ▸ publish ▸ operate. | Shell · MIT or Apache-2.0 |
 | 🛡️ | **[skillsentry](https://github.com/agentic-underground/skillsentry)** | A static auditor for AI-agent skills — read it *before* you run it. Point it at a skill or plugin and get a verdict with receipts, without executing anything it scans: `npx skillsentry <git-url \| dir>` | TypeScript · MIT |
 | ⚖️ | **[token-fairness](https://github.com/agentic-underground/token-fairness)** | `tf`, a token-aware scheduler as one fast Rust binary and a Claude Code plugin: it estimates a job's cost before it fans out, gates every wave against the live rate-limit window, and checkpoints before the ceiling, so a usage limit is never exhausted by surprise. | Rust |
@@ -32,7 +32,8 @@ which runs in your browser, then [`smollm2-360m-to-1.7b-bridge`](https://hugging
 [`qwen3-0.6b-to-1.7b-bridge`](https://huggingface.co/agentic-underground/qwen3-0.6b-to-1.7b-bridge), the second family, and
 [`gemma-3-270m-to-1b-bridge`](https://huggingface.co/agentic-underground/gemma-3-270m-to-1b-bridge), the third — gated, as a Gemma Model Derivative under the [Gemma Terms of Use](https://ai.google.dev/gemma/terms) — and
 [`qwen3.5-0.8b-to-2b-bridge`](https://huggingface.co/agentic-underground/qwen3.5-0.8b-to-2b-bridge), a hybrid model whose recurrent state crosses as it is, and
-[`llama-3.2-1b-to-3b-bridge`](https://huggingface.co/agentic-underground/llama-3.2-1b-to-3b-bridge), Built with Llama — gated, under the Llama 3.2 Community License.
+[`llama-3.2-1b-to-3b-bridge`](https://huggingface.co/agentic-underground/llama-3.2-1b-to-3b-bridge), Built with Llama — gated, under the Llama 3.2 Community License — and
+[`qwen3.5-4b-to-9b-bridge`](https://huggingface.co/agentic-underground/qwen3.5-4b-to-9b-bridge), LatentPort's own pair, re-fitted with the paper's method.
 
 ## 🔭 Projects we follow
 
