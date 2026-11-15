@@ -38,7 +38,8 @@ which runs in your browser, then [`smollm2-360m-to-1.7b-bridge`](https://hugging
 [`llama-3.2-1b-to-3b-bridge`](https://huggingface.co/agentic-underground/llama-3.2-1b-to-3b-bridge), Built with Llama — gated, under the Llama 3.2 Community License — and
 [`qwen3.5-4b-to-9b-bridge`](https://huggingface.co/agentic-underground/qwen3.5-4b-to-9b-bridge), LatentPort's own pair, re-fitted with the paper's method, and
 [`lfm2-350m-to-1.2b-bridge`](https://huggingface.co/agentic-underground/lfm2-350m-to-1.2b-bridge), Liquid AI's short-convolution LFM2 — gated, under the LFM Open License v1.0 — and
-[`granite-4.0-h-1b-to-h-tiny-bridge`](https://huggingface.co/agentic-underground/granite-4.0-h-1b-to-h-tiny-bridge), IBM's Mamba-2 Granite, its recurrent layers' inputs translated so the 64-expert H Tiny builds its own state.
+[`granite-4.0-h-1b-to-h-tiny-bridge`](https://huggingface.co/agentic-underground/granite-4.0-h-1b-to-h-tiny-bridge), IBM's Mamba-2 Granite, its recurrent layers' inputs translated so the 64-expert H Tiny builds its own state, and
+[`granite-4.0-h-350m-to-h-small-bridge`](https://huggingface.co/agentic-underground/granite-4.0-h-350m-to-h-small-bridge), the same idea about 95 times larger: a 350M serving a Q4K 72-expert H Small, 7 of 7 answered, 1.75× sooner.
 
 ## 🔭 Projects we follow
 
