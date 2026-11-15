@@ -32,6 +32,7 @@ which runs in your browser, then [`smollm2-360m-to-1.7b-bridge`](https://hugging
 [`qwen3-0.6b-to-1.7b-bridge`](https://huggingface.co/agentic-underground/qwen3-0.6b-to-1.7b-bridge), the second family, and
 [`qwen3-4b-to-8b-bridge`](https://huggingface.co/agentic-underground/qwen3-4b-to-8b-bridge), the same family at 8B, and
 [`qwen3-0.6b-to-8b-bridge`](https://huggingface.co/agentic-underground/qwen3-0.6b-to-8b-bridge), a 0.6B serving a model 13.6 times its size, 2.82× sooner, and
+[`qwen3-0.6b-to-32b-bridge`](https://huggingface.co/agentic-underground/qwen3-0.6b-to-32b-bridge), a 0.6B serving a Q4K 32B 4.21× sooner (7.17× at 1K tokens) — below our answer bar at 6 of 7, and
 [`gemma-3-270m-to-1b-bridge`](https://huggingface.co/agentic-underground/gemma-3-270m-to-1b-bridge), the third — gated, as a Gemma Model Derivative under the [Gemma Terms of Use](https://ai.google.dev/gemma/terms) — and
 [`qwen3.5-0.8b-to-2b-bridge`](https://huggingface.co/agentic-underground/qwen3.5-0.8b-to-2b-bridge), a hybrid model whose recurrent state crosses as it is, and
 [`llama-3.2-1b-to-3b-bridge`](https://huggingface.co/agentic-underground/llama-3.2-1b-to-3b-bridge), Built with Llama — gated, under the Llama 3.2 Community License — and
