@@ -6,8 +6,8 @@
 disciplined workflows, safety, token efficiency, and reproducible model research.
 
 [![On Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-agentic--underground-ffcc4d)](https://huggingface.co/agentic-underground)
-[![Collection: PrattleNot](https://img.shields.io/badge/collection-PrattleNot-6366f1)](https://huggingface.co/collections/agentic-underground/prattlenot-6af7ac5e95e0fc80de563d61)
-[![Live demo](https://img.shields.io/badge/demo-PrattleNot%20in%20your%20browser-a855f7)](https://agentic-underground.github.io/PrattleNot/)
+[![Collection: prattle_not](https://img.shields.io/badge/collection-prattle__not-6366f1)](https://huggingface.co/collections/agentic-underground/prattle-not-6af7ac5e95e0fc80de563d61)
+[![Live demo](https://img.shields.io/badge/demo-prattle__not%20in%20your%20browser-a855f7)](https://agentic-underground.github.io/prattle_not/)
 
 </div>
 
@@ -17,7 +17,7 @@ disciplined workflows, safety, token efficiency, and reproducible model research
 
 | | Project | What it gives you | |
 |:-:|:--|:--|:--|
-| 🔀 | **[PrattleNot](https://github.com/agentic-underground/PrattleNot)** | An independent reproduction of [**LatentPort**](https://latentport.com/), Simon Villani's method, in Rust and WebAssembly: a small model reads the prompt, a fitted bridge translates its memory, and a larger model answers from it — sooner: up to **3.39×** faster to first token on LatentPort's own 4B → 27B pair, and **1.87×** on a new pair, running [in your browser](https://agentic-underground.github.io/PrattleNot/), carried to a five-times size gap (SmolLM2-360M → 1.7B), and to five more model families (Qwen3, Gemma 3 and 4, Llama 3.2 — Built with Llama, LFM2, Granite 4.0) and a hybrid attention–recurrent model (Qwen3.5), including LatentPort's own Qwen3.5-4B → 9B pair at held-out NCR 0.989. | Rust · Apache-2.0 |
+| 🔀 | **[prattle_not](https://github.com/agentic-underground/prattle_not)** | An independent reproduction of [**LatentPort**](https://latentport.com/), Simon Villani's method, in Rust and WebAssembly: a small model reads the prompt, a fitted bridge translates its memory, and a larger model answers from it — sooner: up to **3.39×** faster to first token on LatentPort's own 4B → 27B pair, and **1.87×** on a new pair, running [in your browser](https://agentic-underground.github.io/prattle_not/), carried to a five-times size gap (SmolLM2-360M → 1.7B), and to five more model families (Qwen3, Gemma 3 and 4, Llama 3.2 — Built with Llama, LFM2, Granite 4.0) and a hybrid attention–recurrent model (Qwen3.5), including LatentPort's own Qwen3.5-4B → 9B pair at held-out NCR 0.989. | Rust · Apache-2.0 |
 | 🏭 | **[idea-to-production](https://github.com/agentic-underground/idea-to-production)** | Eight composable Claude Code plugins that carry software from the spark of an idea to production in one test-first value flow: discover ▸ refine ▸ design ▸ build ▸ assure ▸ secure ▸ publish ▸ operate. | Shell · MIT or Apache-2.0 |
 | 🛡️ | **[skillsentry](https://github.com/agentic-underground/skillsentry)** | A static auditor for AI-agent skills — read it *before* you run it. Point it at a skill or plugin and get a verdict with receipts, without executing anything it scans: `npx skillsentry <git-url \| dir>` | TypeScript · MIT |
 | ⚖️ | **[token-fairness](https://github.com/agentic-underground/token-fairness)** | `tf`, a token-aware scheduler as one fast Rust binary and a Claude Code plugin: it estimates a job's cost before it fans out, gates every wave against the live rate-limit window, and checkpoints before the ceiling, so a usage limit is never exhausted by surprise. | Rust |
@@ -25,7 +25,7 @@ disciplined workflows, safety, token efficiency, and reproducible model research
 ## 🤗 On Hugging Face
 
 The weights we fit are published at **[huggingface.co/agentic-underground](https://huggingface.co/agentic-underground)**,
-gathered in the **[PrattleNot collection](https://huggingface.co/collections/agentic-underground/prattlenot-6af7ac5e95e0fc80de563d61)**:
+gathered in the **[prattle_not collection](https://huggingface.co/collections/agentic-underground/prattle-not-6af7ac5e95e0fc80de563d61)**:
 bridges between model pairs, each pinned by commit and measured by the harness in its source
 repository. Start with [`smollm2-135m-to-360m-bridge`](https://huggingface.co/agentic-underground/smollm2-135m-to-360m-bridge),
 which runs in your browser, then [`smollm2-360m-to-1.7b-bridge`](https://huggingface.co/agentic-underground/smollm2-360m-to-1.7b-bridge), across a larger gap, and
@@ -60,5 +60,5 @@ follow the upstream links for the real thing.
 
 - 🔬 **Reproducible** — a number we publish comes with the harness that produced it.
 - ✅ **Test-first** — a feature starts as a failing test that describes where it is going.
-- 🙏 **Attributed** — derivative work says so, loudly; PrattleNot is downstream of
+- 🙏 **Attributed** — derivative work says so, loudly; prattle_not is downstream of
   [LatentPort](https://latentport.com/) by Simon Villani.
